@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ข้อมูลส่วนตัว - Profile</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;600&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Sarabun', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+            color: #333;
+            padding: 20px;
+        }
+
+        /* ตกแต่งเมนูนำทาง (Navigation Bar) */
+        nav {
+            background: rgba(44, 62, 80, 0.95);
+            padding: 15px 25px;
+            border-radius: 12px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            backdrop-filter: blur(5px);
+        }
+
+        nav a {
+            color: #ecf0f1;
+            text-decoration: none;
+            padding: 8px 16px;
+            font-weight: 600;
+            font-size: 15px;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        nav a:hover {
+            background: rgba(255, 255, 255, 0.1);
+            color: #fff;
+            transform: translateY(-2px);
+        }
+
+        /* หน้าที่เปิดอยู่ (Active State) ให้เด่นชัดและดูโมเดิร์น */
+        .active {
+            background: #3498db !important;
+            color: white !important;
+            box-shadow: 0 4px 10px rgba(52, 152, 219, 0.3);
+        }
+
+        /* ตกแต่งกล่องเนื้อหาหลัก (Profile Card Container) */
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: #ffffff;
+            padding: 40px 30px;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+            text-align: center;
+            border-top: 5px solid #3498db;
+        }
+
+        /* ตกแต่งสัญลักษณ์/ไอคอนของหน้า */
+        .profile-icon-bg {
+            width: 100px;
+            height: 100px;
+            background: #e8f4fd;
+            color: #3498db;
+            font-size: 45px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto 20px auto;
+            box-shadow: 0 5px 15px rgba(52, 152, 219, 0.1);
+        }
+
+        h1 {
+            font-size: 26px;
+            color: #2c3e50;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+
+        p {
+            font-size: 16px;
+            color: #666;
+            line-height: 1.8;
+            background: #f8f9fa;
+            padding: 15px 20px;
+            border-radius: 10px;
+            border-left: 4px solid #3498db;
+            text-align: left;
+        }
+
+        /* สไตล์เพิ่มเติมสำหรับเครดิตคนรับผิดชอบ */
+        .badge {
+            display: inline-block;
+            margin-top: 15px;
+            background: #e1f5fe;
+            color: #0288d1;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html"><i class="fa-solid fa-house"></i> หน้าแรก (Index)</a>
+        <a href="dashboard.html"><i class="fa-solid fa-chart-simple"></i> แดชบอร์ด (Dashboard)</a>
+        <a href="profile.html" class="active"><i class="fa-solid fa-user"></i> โปรไฟล์ (Profile)</a>
+    </nav>
+
+    <div class="container">
+        <div class="profile-icon-bg">
+            <i class="fa-solid fa-user-gear"></i>
+        </div>
+
+        <h1>โปรไฟล์ผู้ใช้งาน (Profile)</h1>
+        <p>หน้านี้ทำหน้าที่แสดงข้อมูลส่วนตัวของผู้ใช้ เพื่อนคนที่ 3 เป็นคนรับผิดชอบดูแลและพัฒนาหน้านี้ครับ</p>
+        
+        <div class="badge"><i class="fa-solid fa-code"></i> พัฒนาโดย: เพื่อนคนที่ 3</div>
+    </div>
+
+</body>
+</html>
